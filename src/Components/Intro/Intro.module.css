@@ -1,0 +1,46 @@
+.introParaContainer {
+  margin: auto;
+  border-radius: 1ch;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  background-color: black;
+  color: white;
+}
+
+.introParagraphs {
+  word-spacing: 1.5ch;
+  padding: 2ch;
+}
+
+.introParagraphs::first-letter {
+  font-size: 2rem;
+  /* color: blueviolet; */
+  color: beige;
+}
+
+@media screen and (max-width: 600px) {
+  .introParagraphs::first-letter {
+    font-size: 2rem;
+  }
+  .introParagraphs {
+    color: teal;
+  }
+  .introParaContainer {
+    padding: 1.5ch;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .introParaContainer {
+    width: 50%;
+    padding: 3ch;
+    /* font-size: 2rem; */
+  }
+  .introParagraphs {
+    /* font-size: 1.4rem; */
+    color: teal;
+  }
+  .introParagraphs::first-letter {
+    font-size: 2.5rem;
+  }
+}
