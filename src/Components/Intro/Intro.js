@@ -124,51 +124,12 @@ function Intro(props) {
                 }}
                 style={{}}
               >
-                {/* Hey, I am Yashwanth. I have professional experience in machine learning... */}
                 Hello, there! I'm Yashwanth,{" "}
                 <Box sx={{ fontWeight: 800 }} component="span">
                   a passionate machine learning developer
                 </Box>{" "}
-                dedicated to transforming ideas into engaging online
-                experiences.
-              </Typography>
-            </div>
-            <div
-              className={style.introParaContainer}
-              style={{
-                placeContent: "center",
-                placeItems: "center",
-                backdropFilter: "blur(10px)",
-              }}
-            >
-              <Typography
-                className={style.introParagraphs}
-                sx={{
-                  fontFamily:
-                    props.theme == "light"
-                      ? "'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"
-                      : "'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif",
-                  lineHeight: "3ch",
-                  fontFamily: "monospace",
-                  margin: "auto",
-                  textAlign: "center",
-                  padding: "0ch 1ch 0ch 1ch",
-                  fontSize: {
-                    xs: "1rem",
-                    lg: "1.4rem",
-                  },
-                  // wordSpacing: "1.5ch",
-                }}
-                style={{}}
-              >
-                With a{" "}
-                <Box sx={{ fontWeight: 800 }} component="span" f>
-                  Leveraging a meticulous approach to data engineering and a deep understanding
-                </Box>{" "}
-                of AI principles, I build scalable,
-                <Box component="span" sx={{ fontWeight: 800 }}>
-                  reliable machine learning models and pipelines
-                </Box>
+                dedicated to leveraging a meticulous approach to data engineering and a
+                deep understanding of AI principles, I build scalable, reliable machine learning applications.
               </Typography>
             </div>
           </Stack>
