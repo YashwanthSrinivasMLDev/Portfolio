@@ -12,7 +12,6 @@ import Box from "@mui/material/Box";
 
 function Intro(props) {
   // const theme = "light";
-  const mainControls = useAnimation();
   const introRef = useRef(null);
 
 
