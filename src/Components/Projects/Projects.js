@@ -242,7 +242,7 @@ function Projects(props) {
               <div className={style.projectDetailsContainer}>
                 <span className={style.title}>Document Extractor</span>
                 <span className={style.description}>
-                  A tool that can extract entities from a document.
+                  An AI tool that can extract entities from a document.
                 </span>
               </div>
             </a>
@@ -285,7 +285,7 @@ function Projects(props) {
               <div className={style.projectDetailsContainer}>
                 <span className={style.title}>Smart Photo Organizer</span>
                 <span className={style.description}>
-                  A tool that organizes your random photos into categorical folders
+                  An AI tool that organizes your random photos into categorical folders
                 </span>
               </div>
             </a>
