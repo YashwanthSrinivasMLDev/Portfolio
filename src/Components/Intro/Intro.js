@@ -129,7 +129,7 @@ function Intro(props) {
                   a passionate machine learning developer
                 </Box>{" "}
                 dedicated to leveraging a meticulous approach to data engineering and a
-                deep understanding of AI principles, I build scalable, reliable machine learning applications.
+                deep understanding of AI principles to build scalable and reliable machine learning applications.
               </Typography>
             </div>
           </Stack>
