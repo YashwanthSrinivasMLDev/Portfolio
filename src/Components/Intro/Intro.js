@@ -1,7 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { Stack } from "@mui/material";
 import Typography from "@mui/material/Typography";
-import { motion, useInView, useAnimation } from "framer-motion";
 import notepad_1 from "../../Images/portfolio/notepad_1.jpg";
 import abstract_mobile from "../../Images/portfolio/abstract_mobile.jpg";
 import hanging_flowers_mobile from "../../Images/portfolio/hanging_flowers_mobile.jpg";
@@ -15,15 +14,8 @@ function Intro(props) {
   // const theme = "light";
   const mainControls = useAnimation();
   const introRef = useRef(null);
-  const isInView = useInView(introRef, { once: false });
 
-  useEffect(() => {
-    if (isInView) {
-      mainControls.start("visible");
-    } else {
-      mainControls.start("hidden");
-    }
-  }, [isInView]);
+
   return (
     <Stack
       style={{
@@ -42,7 +34,7 @@ function Intro(props) {
         },
       }}
     >
-      <motion.div
+      <div
         style={{
           display: "flex",
           flexDirection: "column",
@@ -56,7 +48,7 @@ function Intro(props) {
           },
         }}
       >
-        <motion.div>
+        <div>
           <Stack
             direction="column"
             gap={{
@@ -65,27 +57,7 @@ function Intro(props) {
             }}
             sx={{ display: "flex", justifyContent: "space-between" }}
           >
-            <motion.div
-              initial={{
-                scale: 0.5,
-                opacity: 0,
-                color: "white",
-              }}
-              variants={{
-                hidden: { opacity: 0 },
-                visible: {
-                  scale: [0.5, 1],
-
-                  opacity: [0, 1],
-                  color: "black",
-                },
-              }}
-              animate={mainControls}
-              transition={{
-                // delay: 0.5,
-                duration: 1.5,
-                ease: "anticipate",
-              }}
+            <div
               // transition={{ delay: 0.75, duration: 1, ease: "easeInOut" }}
               style={{
                 placeContent: "center",
@@ -123,21 +95,10 @@ function Intro(props) {
               >
                 WELCOME TO MY PORTFOLIO!
               </Typography>
-            </motion.div>
+            </div>
 
-            <motion.div
+            <div
               className={style.introParaContainer}
-              initial={{
-                opacity: 0,
-              }}
-              variants={{
-                hidden: { opacity: 0 },
-                visible: {
-                  opacity: [0, 1],
-                },
-              }}
-              animate={mainControls}
-              transition={{ delay: 1.5, duration: 2, ease: "easeInOut" }}
               style={{
                 // marginTop: "auto",
                 placeContent: "center",
@@ -172,20 +133,9 @@ function Intro(props) {
                 dedicated to transforming ideas into engaging online
                 experiences.
               </Typography>
-            </motion.div>
-            <motion.div
+            </div>
+            <div
               className={style.introParaContainer}
-              initial={{
-                opacity: 0,
-              }}
-              variants={{
-                hidden: { opacity: 0 },
-                visible: {
-                  opacity: [0, 1],
-                },
-              }}
-              animate={mainControls}
-              transition={{ delay: 3, duration: 2, ease: "easeInOut" }}
               style={{
                 placeContent: "center",
                 placeItems: "center",
@@ -225,11 +175,11 @@ function Intro(props) {
                   functionality and aesthetics.
                 </Box>
               </Typography>
-            </motion.div>
+            </div>
           </Stack>
-        </motion.div>
+        </div>
         <div ref={introRef}> </div>
-      </motion.div>
+      </div>
     </Stack>
   );
 }
