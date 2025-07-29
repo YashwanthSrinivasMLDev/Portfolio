@@ -25,19 +25,13 @@ function Skills(props) {
     "Keras",
     "Scikit-learn",
     "Hugging Face",
-    "NLT",
-    "Spacy",
-    "Spark",
+    "NLP",
     "LangChain",
     "FAISS",
     "OpenAI API",
     "AWS",
-    "Sagemaker",
     "Docker",
     "Google Cloud Platform",
-    "GitHub",
-    "Steamlit",
-    "OpenCV",
   ];
 
   return (
