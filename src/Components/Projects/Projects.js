@@ -327,6 +327,7 @@ function Projects(props) {
           </Grid>
 
 
+        </Grid>
         {/* <div ref={projectsRef}>hello</div> */}
       </motion.div>
     </Stack>
