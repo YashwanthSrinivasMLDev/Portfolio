@@ -152,7 +152,7 @@ function Projects(props) {
             >
               <img src={imageChatBot} className={style.projectThumbnail} />
               <div className={style.projectDetailsContainer}>
-                <span className={style.title}>Vegan Voice</span>
+                <span className={style.title}>Ethical GPT</span>
                 <span className={style.description}>
                   A RAG augmented CHATGPT that understands animal rights!
                 </span>
@@ -195,7 +195,7 @@ function Projects(props) {
                 className={style.projectThumbnail}
               />
               <div className={style.projectDetailsContainer}>
-                <span className={style.title}>Football Stats Hub</span>
+                <span className={style.title}>Intent based Chatbot</span>
                 <span className={style.description}>
                   An intent based chatbot
                 </span>
@@ -240,7 +240,7 @@ function Projects(props) {
               />
 
               <div className={style.projectDetailsContainer}>
-                <span className={style.title}>Culinary Craft</span>
+                <span className={style.title}>Document Extractor</span>
                 <span className={style.description}>
                   A tool that can extract entities from a document.
                 </span>
@@ -283,7 +283,7 @@ function Projects(props) {
               />
 
               <div className={style.projectDetailsContainer}>
-                <span className={style.title}>Advocacy Quest</span>
+                <span className={style.title}>Smart Photo Organizer</span>
                 <span className={style.description}>
                   A tool that organizes your random photos into categorical folders
                 </span>
