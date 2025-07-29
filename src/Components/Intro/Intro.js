@@ -163,15 +163,11 @@ function Intro(props) {
               >
                 With a{" "}
                 <Box sx={{ fontWeight: 800 }} component="span" f>
-                  keen eye for design
+                  Leveraging a meticulous approach to data engineering and a deep understanding
                 </Box>{" "}
-                and a knack for coding, I specialize in creating{" "}
+                of AI principles, I build scalable,
                 <Box component="span" sx={{ fontWeight: 800 }}>
-                  user-friendly, responsive
-                </Box>{" "}
-                websites that seamlessly blend{" "}
-                <Box component="span" sx={{ fontWeight: 800 }}>
-                  functionality and aesthetics.
+                  reliable machine learning models and pipelines
                 </Box>
               </Typography>
             </div>
