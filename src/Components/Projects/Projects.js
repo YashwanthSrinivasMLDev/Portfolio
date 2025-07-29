@@ -15,23 +15,14 @@ import intro_mobile_1 from "../../Images/portfolio/intro_mobile_4.jpg";
 
 // import { Stack } from "@mui/material";
 import Grid from "@mui/material/Grid";
-import { motion, useInView, useAnimation } from "framer-motion";
 
 function Projects(props) {
   // const [theme] = useOutletContext();
   const projectsRef = useRef(null);
-  const isInView = useInView(projectsRef, { once: false });
 
-  const mainControls = useAnimation();
   const projectContainerBackgroundColor = "rgba(0,0,0,0.7)";
 
-  useEffect(() => {
-    if (isInView) {
-      mainControls.start("visible");
-    } else {
-      mainControls.start("hidden");
-    }
-  }, [isInView]);
+
 
   return (
     <Stack
@@ -60,20 +51,9 @@ function Projects(props) {
         backgroundSize: "cover",
       }}
     >
-      <motion.div
-        initial={{
-          scale: 0.5,
-          opacity: 0,
-          color: "white",
-        }}
-        variants={{
-          hidden: { opacity: 0, color: "white" },
-          visible: {
-            scale: [0.5, 1],
-            opacity: [0, 1],
-            color: "black",
-          },
-        }}
+      <div
+
+
         style={{
           color: "black",
           fontFamily: "monospace",
@@ -83,12 +63,8 @@ function Projects(props) {
           width: "100%",
           placeSelf: "center",
         }}
-        animate={mainControls}
-        transition={{
-          // delay: 0.5,
-          duration: 1.5,
-          ease: "anticipate",
-        }}
+
+
       >
         <Typography
           className={style.pageTitle}
@@ -117,19 +93,8 @@ function Projects(props) {
         >
           MY RECENT WORK
         </Typography>
-      </motion.div>
-      <motion.div
-        variants={{
-          hidden: { opacity: 0 },
-          visible: { opacity: [0, 1] },
-        }}
-        initial={{ opacity: 0 }}
-        animate={mainControls}
-        transition={{
-          delay: 1,
-          duration: 2,
-          ease: "easeInOut",
-        }}
+      </div>
+      <div
         style={{
           display: "flex",
           placeContent: "center",
@@ -329,7 +294,7 @@ function Projects(props) {
 
         </Grid>
         {/* <div ref={projectsRef}>hello</div> */}
-      </motion.div>
+      </div>
     </Stack>
   );
 }
