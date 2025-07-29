@@ -1,8 +1,8 @@
 import React, { useRef, useEffect } from "react";
 import style from "./Projects.module.css";
-import veganFoodBackgroundImage from "../../Images/engin-akyurt-GnkZMT5rtx4-unsplash.jpg";
-import footballStatsBackgroundImage from "../../Images/sari-ibrahim-lk0T8KLxfqs-unsplash.jpg";
-import veganActivismSimulatorBackgroundImage from "../../Images/claudio-schwarz-FoVrVBxEefU-unsplash.jpg";
+import documentExtractorImage from "../../Images/documentExtractorImage.jpg";
+import chatbotImage from "../../Images/mohamed-nohassi--0xMiYQmk8g-unsplash.jpg";
+import photoOrganizerImage from "../../Images/photoOrganizerImage.jpg";
 import todoBackgroundImage from "../../Images/todo.png";
 import imageChatBot from "../../Images/veganism_chat_bot_logo.jpg";
 import { useOutletContext, Link, useNavigate } from "react-router-dom";
@@ -191,7 +191,7 @@ function Projects(props) {
               target="_blank"
             >
               <img
-                src={footballStatsBackgroundImage}
+                src={chatbotImage}
                 className={style.projectThumbnail}
               />
               <div className={style.projectDetailsContainer}>
@@ -235,7 +235,7 @@ function Projects(props) {
               }}
             >
               <img
-                src={veganFoodBackgroundImage}
+                src={documentExtractorImage}
                 className={style.projectThumbnail}
               />
 
@@ -278,7 +278,7 @@ function Projects(props) {
               }}
             >
               <img
-                src={veganActivismSimulatorBackgroundImage}
+                src={photoOrganizerImage}
                 className={style.projectThumbnail}
               />
 
